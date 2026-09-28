@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/SoC/vitis_embedded_lab1/led_control_app/build",
+  "command": "C:\\AMD_Vitis_Embedded\\2026.1\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -ID:/SoC/vitis_embedded_lab1/led_control_app/src -isystem D:/SoC/vitis_embedded_lab1/first_zynq_platform/export/first_zynq_platform/sw/standalone_ps7_cortexa9_0/include -isystem C:/AMD_Vitis_Embedded/2026.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.4.0/include -isystem C:/AMD_Vitis_Embedded/2026.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.4.0/include-fixed -isystem C:/AMD_Vitis_Embedded/2026.1/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=D:/SoC/vitis_embedded_lab1/first_zynq_platform/export/first_zynq_platform/sw/standalone_ps7_cortexa9_0/Xilinx.spec -ID:/SoC/vitis_embedded_lab1/first_zynq_platform/export/first_zynq_platform/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\led_control_app.elf.dir\\main.c.obj -c D:\\SoC\\vitis_embedded_lab1\\led_control_app\\src\\main.c",
+  "file": "D:\\SoC\\vitis_embedded_lab1\\led_control_app\\src\\main.c",
+  "output": "CMakeFiles\\led_control_app.elf.dir\\main.c.obj"
+}
+]

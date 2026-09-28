@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/SoC/vitis_embedded_lab1/first_zynq_platform/zynq_fsbl/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

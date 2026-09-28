@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1790339472">
+  <File Type="PA-DCP" Name="first_zynq_system_wrapper.dcp"/>
+  <File Type="PA-TCL" Name="first_zynq_system_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="first_zynq_system_wrapper_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="first_zynq_system_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="first_zynq_system_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="first_zynq_system_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="first_zynq_system_wrapper_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="first_zynq_system_wrapper_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="first_zynq_system_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="first_zynq_system_wrapper.hwdef"/>
+  <File Type="OPT-TIMING" Name="first_zynq_system_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="first_zynq_system_wrapper_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="first_zynq_system_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="first_zynq_system_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="first_zynq_system_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="first_zynq_system_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="first_zynq_system_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="first_zynq_system_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="first_zynq_system_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="first_zynq_system_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="first_zynq_system_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="first_zynq_system_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="first_zynq_system_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="first_zynq_system_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="first_zynq_system_wrapper_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="first_zynq_system_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="first_zynq_system_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="first_zynq_system_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="first_zynq_system_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="first_zynq_system_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="first_zynq_system_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="first_zynq_system_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="first_zynq_system_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="first_zynq_system_wrapper_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="first_zynq_system_wrapper_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="first_zynq_system_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="first_zynq_system_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="first_zynq_system_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="first_zynq_system_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="first_zynq_system_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="first_zynq_system_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="first_zynq_system_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="first_zynq_system_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="first_zynq_system_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="first_zynq_system_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="first_zynq_system_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="first_zynq_system_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="first_zynq_system_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="first_zynq_system_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="first_zynq_system_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="first_zynq_system_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="first_zynq_system_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="first_zynq_system_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="first_zynq_system_wrapper_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="first_zynq_system_wrapper_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="first_zynq_system_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="first_zynq_system_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="first_zynq_system_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="first_zynq_system_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="first_zynq_system_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="first_zynq_system_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="first_zynq_system_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="first_zynq_system_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="first_zynq_system_wrapper.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="first_zynq_system_wrapper.ncr"/>
+  <File Type="BG-BIT" Name="first_zynq_system_wrapper.bit"/>
+  <File Type="BG-XML" Name="first_zynq_system_wrapper.xml"/>
+  <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
+  <File Type="BG-BIN" Name="first_zynq_system_wrapper.bin"/>
+  <File Type="BITSTR-MSK" Name="first_zynq_system_wrapper.msk"/>
+  <File Type="BITSTR-RBT" Name="first_zynq_system_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="first_zynq_system_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="first_zynq_system_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="first_zynq_system_wrapper.mmi"/>
+  <File Type="PDI-FILE" Name="first_zynq_system_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="first_zynq_system_wrapper_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="first_zynq_system_wrapper_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="first_zynq_system_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="first_zynq_system_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="first_zynq_system_wrapper.rnpi"/>
+  <File Type="RCDO-FILE" Name="first_zynq_system_wrapper.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="first_zynq_system_wrapper_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="first_zynq_system_wrapper_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="first_zynq_system_wrapper_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="first_zynq_system_wrapper_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="first_zynq_system_wrapper_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="first_zynq_system_wrapper_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="first_zynq_system_wrapper_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="first_zynq_system_wrapper_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="first_zynq_system_wrapper_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="first_zynq_system_wrapper_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="first_zynq_system_wrapper_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="first_zynq_system_wrapper_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="first_zynq_system_wrapper_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="first_zynq_system_wrapper_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="first_zynq_system_wrapper_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="first_zynq_system_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="first_zynq_system_wrapper.rbd"/>
+  <File Type="MMI-FILE" Name="first_zynq_system_wrapper.mmi"/>
+  <File Type="BIF-FILE" Name="first_zynq_system_wrapper.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="first_zynq_system_wrapper_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="first_zynq_system_wrapper_pld.bif"/>
+  <File Type="LTX-FILE" Name="first_zynq_system_wrapper.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="first_zynq_system_wrapper_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="first_zynq_system_wrapper_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="first_zynq_system_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="first_zynq_system_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="first_zynq_system_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="first_zynq_system_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="first_zynq_system_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="first_zynq_system_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="first_zynq_system_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/first_zynq_system/first_zynq_system.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/first_zynq_system/hdl/first_zynq_system_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="first_zynq_system_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2026"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="first_zynq_system_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="first_zynq_system_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="first_zynq_system_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="first_zynq_system_processing_system7_0_0"/>
+</GenRun>

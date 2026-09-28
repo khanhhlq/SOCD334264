@@ -1,0 +1,4 @@
+D:/SoC/vitis_embedded_lab1/first_zynq_platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+D:/SoC/vitis_embedded_lab1/first_zynq_platform/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+D:/SoC/vitis_embedded_lab1/first_zynq_platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+D:/SoC/vitis_embedded_lab1/first_zynq_platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

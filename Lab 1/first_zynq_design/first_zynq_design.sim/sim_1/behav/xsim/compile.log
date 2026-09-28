@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SoC/Lab 1/first_zynq_design/first_zynq_design.srcs/sim_1/new/tb_led_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_led_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SoC/Lab 1/first_zynq_design/first_zynq_design.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

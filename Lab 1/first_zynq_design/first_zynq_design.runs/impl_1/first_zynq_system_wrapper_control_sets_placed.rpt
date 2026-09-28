@@ -1,0 +1,107 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Sep 25 19:32:08 2026
+| Host         : KHANHLQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file first_zynq_system_wrapper_control_sets_placed.rpt
+| Design       : first_zynq_system_wrapper
+| Device       : xc7z045
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    29 |
+|    Minimum number of control sets                        |    29 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    29 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              83 |           32 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              83 |           36 |
+| Yes          | No                    | No                     |              12 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             258 |           80 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                       Clock Signal                       |                                                            Enable Signal                                                            |                                                           Set/Reset Signal                                                          | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     | first_zynq_system_i/axi_gpio_0/U0/gpio_core_1/reg1[31]                                                                              |                1 |              4 |         4.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/clear                                                          |                1 |              4 |         4.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     | first_zynq_system_i/rst_ps7_0_50M/U0/EXT_LPF/lpf_int                                                                                |                1 |              4 |         4.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i[8]_i_1_n_0                                       | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR[0]                                                          |                1 |              4 |         4.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start2                                                         | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr                                            |                1 |              4 |         4.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i[0]                                               | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR[0]                                                          |                1 |              5 |         5.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.aw_incr[2]_i_1_n_0                                 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                1 |              5 |         5.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/last_r_split                                                 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                4 |              6 |         1.50 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.w_split[4]_i_1_n_0                                 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                3 |              6 |         2.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/rst_ps7_0_50M/U0/SEQ/seq_cnt_en                                                                                 | first_zynq_system_i/rst_ps7_0_50M/U0/SEQ/SEQ_COUNTER/clear                                                                          |                1 |              6 |         6.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.m_wdata[31]_i_1_n_0                                |                2 |              8 |         4.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/E[0]                                                 | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR[0]                                                          |                1 |              8 |         8.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/last_r_repeat                                                | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                4 |              8 |         2.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/r_beats[0]                                                   | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                4 |              9 |         2.25 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.wstrb_mux/E[0]                                     | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                4 |             11 |         2.75 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.b_cnt[10]_i_2_n_0                                  | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.b_cnt[10]_i_1_n_0                                  |                3 |             11 |         3.67 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/r_cnt[0]                                                     | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                4 |             11 |         2.75 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.m_arprot[2]_i_1_n_0                                 |                                                                                                                                     |                5 |             12 |         2.40 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.aw_addr[8]_i_1_n_0                                 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                4 |             12 |         3.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/ar_addr[0]                                                   | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                8 |             12 |         1.50 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/s_bid[0]                                                     | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                2 |             12 |         6.00 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.wdata_mux/gen_write.w_grant_i_reg                  |                3 |             13 |         4.33 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     | first_zynq_system_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR[0]                                                          |                7 |             20 |         2.86 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |               21 |             30 |         1.43 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.arid_mux/s_r_en                                     | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.araddr_mux/FSM_sequential_gen_read.r_state_reg[2]   |                9 |             32 |         3.56 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.awaddr_mux/FSM_sequential_gen_write.w_state_reg[2] | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_write.awaddr_mux/FSM_sequential_gen_write.w_state_reg[0] |                6 |             32 |         5.33 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.r_m_dwsize_mux/E[0]                                 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.s_axi_arready_vec_i[0]_i_1_n_0                      |                9 |             32 |         3.56 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.m_r_en_reg_n_0                                      | first_zynq_system_i/axi_smc/inst/sc_ul/inst/gen_axi_full_nxm.sasd_inst/gen_read.arctrl_mux/gen_read.m_r_en_reg                      |               10 |             32 |         3.20 |
+|  first_zynq_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                     |                                                                                                                                     |               33 |             84 |         2.55 |
++----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

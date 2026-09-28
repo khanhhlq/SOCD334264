@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Sep 25 14:07:49 2026
+# Process ID         : 29084
+# Current directory  : D:/SoC/Lab 1/first_zynq_design/first_zynq_design.runs/first_zynq_system_processing_system7_0_0_synth_1
+# Command line       : vivado.exe -log first_zynq_system_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source first_zynq_system_processing_system7_0_0.tcl
+# Log file           : D:/SoC/Lab 1/first_zynq_design/first_zynq_design.runs/first_zynq_system_processing_system7_0_0_synth_1/first_zynq_system_processing_system7_0_0.vds
+# Journal file       : D:/SoC/Lab 1/first_zynq_design/first_zynq_design.runs/first_zynq_system_processing_system7_0_0_synth_1\vivado.jou
+# Running On         : KHANHLQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7735HS with Radeon Graphics        
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14286 MB
+# Swap memory        : 11274 MB
+# Total Virtual      : 25560 MB
+# Available Virtual  : 5255 MB
+#-----------------------------------------------------------
+source first_zynq_system_processing_system7_0_0.tcl -notrace

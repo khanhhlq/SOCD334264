@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../../first_zynq_design.gen/sources_1/bd/first_zynq_system/ipshared/ec67/hdl" --include "../../../../first_zynq_design.gen/sources_1/bd/first_zynq_system/ipshared/df05/hdl" --include "../../../../first_zynq_design.gen/sources_1/bd/first_zynq_system/ipshared/f0b6/hdl/verilog" --include "../../../../first_zynq_design.gen/sources_1/bd/first_zynq_system/ipshared/00fe/hdl/verilog" --include "C:/AMDDesignTools/2026.1/Vivado/data/xilinx_vip/include" \
+"../../../../first_zynq_design.srcs/sim_1/new/tb_led_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

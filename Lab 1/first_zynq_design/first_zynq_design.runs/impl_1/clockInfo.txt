@@ -1,0 +1,10 @@
+-------------------------------------
+| Tool Version : Vivado v.2026.1
+| Date         : Fri Sep 25 19:32:00 2026
+| Host         : KHANHLQ
+| Design       : checkpoint_first_zynq_system_wrapper
+| Device       : xc7z045-ffg900-2--
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
