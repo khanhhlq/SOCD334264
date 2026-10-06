@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 22:43:22 2026
+# Process ID         : 23696
+# Current directory  : D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/impl_1
+# Command line       : vivado.exe -log zynq_interrupt_system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source zynq_interrupt_system_wrapper.tcl -notrace
+# Log file           : D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/impl_1/zynq_interrupt_system_wrapper.vdi
+# Journal file       : D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/impl_1\vivado.jou
+# Running On         : KHANHLQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7735HS with Radeon Graphics        
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14286 MB
+# Swap memory        : 20258 MB
+# Total Virtual      : 34544 MB
+# Available Virtual  : 6832 MB
+#-----------------------------------------------------------
+source zynq_interrupt_system_wrapper.tcl -notrace

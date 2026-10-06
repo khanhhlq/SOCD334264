@@ -1,0 +1,26 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrix_mult" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrix_mult" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../source/tut3B_Function/matrix_mult.cpp:8:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="matrix_mult" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/tut3B_Function/matrix_mult.cpp:11:9" msg_body="Loop 'Row' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Row"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/tut3B_Function/matrix_mult.cpp:14:12" msg_body="Loop 'Col' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Col"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/tut3B_Function/matrix_mult.cpp:19:19" msg_body="Loop 'Product' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Product"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/tut3B_Function/matrix_mult.cpp:7:0" msg_body="Unrolling loop 'Row' (../source/tut3B_Function/matrix_mult.cpp:11:9) in function 'matrix_mult' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../source/tut3B_Function/matrix_mult.cpp:11:9" LoopName="Row"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/tut3B_Function/matrix_mult.cpp:7:0" msg_body="Unrolling loop 'Col' (../source/tut3B_Function/matrix_mult.cpp:14:12) in function 'matrix_mult' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../source/tut3B_Function/matrix_mult.cpp:14:12" LoopName="Col"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/tut3B_Function/matrix_mult.cpp:7:0" msg_body="Unrolling loop 'Product' (../source/tut3B_Function/matrix_mult.cpp:19:19) in function 'matrix_mult' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../source/tut3B_Function/matrix_mult.cpp:19:19" LoopName="Product"/>
+    </msg>
+</xilinx:hls_fe_msgs>

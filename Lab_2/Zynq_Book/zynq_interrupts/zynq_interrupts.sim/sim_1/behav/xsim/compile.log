@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.srcs/sim_1/new/tb_zynq_interrupt_system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interrupt_counter_model
+INFO: [VRFC 10-311] analyzing module tb_zynq_interrupt_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

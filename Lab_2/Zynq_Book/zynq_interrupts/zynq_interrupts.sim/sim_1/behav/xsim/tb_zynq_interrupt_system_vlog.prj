@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../../zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ec67/hdl" --include "../../../../zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/df05/hdl" --include "../../../../zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/f0b6/hdl/verilog" --include "../../../../zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/00fe/hdl/verilog" --include "C:/AMDDesignTools/2026.1/Vivado/data/xilinx_vip/include" \
+"../../../../zynq_interrupts.srcs/sim_1/new/tb_zynq_interrupt_system.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,932 @@
+<profile>
+    <ReportVersion>
+        <Version>2026.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>matrix_mult</TopModelName>
+        <TargetClockPeriod>5.00</TargetClockPeriod>
+        <ClockUncertainty>1.35</ClockUncertainty>
+        <TargetInitiationInterval>1</TargetInitiationInterval>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>yes</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>5.415</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>26</Best-caseLatency>
+            <Average-caseLatency>26</Average-caseLatency>
+            <Worst-caseLatency>26</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.141 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.141 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.141 us</Worst-caseRealTimeLatency>
+            <PipelineInitiationInterval>13</PipelineInitiationInterval>
+            <PipelineDepth>27</PipelineDepth>
+            <Interval-min>13</Interval-min>
+            <Interval-max>13</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>Timing Violation</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../source/tut3B_Function_Reshape/matrix_mult.cpp:23</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>75</DSP>
+            <FF>8612</FF>
+            <LUT>4838</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>matrix_mult</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>matrix_mult</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>matrix_mult</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>matrix_mult</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>matrix_mult</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>matrix_mult</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_address0</name>
+            <Object>a</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_ce0</name>
+            <Object>a</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_q0</name>
+            <Object>a</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>40</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_address1</name>
+            <Object>a</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_ce1</name>
+            <Object>a</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_q1</name>
+            <Object>a</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>40</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b_address0</name>
+            <Object>b</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b_ce0</name>
+            <Object>b</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b_q0</name>
+            <Object>b</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>40</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b_address1</name>
+            <Object>b</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b_ce1</name>
+            <Object>b</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b_q1</name>
+            <Object>b</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>40</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_address0</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_ce0</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_we0</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_d0</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_address1</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_ce1</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_we1</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>prod_d1</name>
+            <Object>prod</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>matrix_mult</ModuleName>
+            <BindInstances>mac_muladd_8s_8s_16s_16_4_1_U83 mul_8s_8s_16_5_1_U25 mac_muladd_8s_8s_16s_16_4_1_U51 mul_8s_8s_16_5_1_U1 mac_muladd_8s_8s_16s_16_4_1_U59 mac_muladd_8s_8s_16s_16_4_1_U83 mac_muladd_8s_8s_16s_16_4_1_U51 mac_muladd_8s_8s_16s_16_4_1_U59 add_ln23_3_fu_983_p2 mac_muladd_8s_8s_16s_16_4_1_U84 mul_8s_8s_16_5_1_U26 mac_muladd_8s_8s_16s_16_4_1_U52 mul_8s_8s_16_5_1_U2 mac_muladd_8s_8s_16s_16_4_1_U60 mac_muladd_8s_8s_16s_16_4_1_U84 mac_muladd_8s_8s_16s_16_4_1_U52 mac_muladd_8s_8s_16s_16_4_1_U60 add_ln23_7_fu_988_p2 mac_muladd_8s_8s_16s_16_4_1_U85 mul_8s_8s_16_5_1_U27 mac_muladd_8s_8s_16s_16_4_1_U55 mul_8s_8s_16_5_1_U5 mac_muladd_8s_8s_16s_16_4_1_U65 mac_muladd_8s_8s_16s_16_4_1_U85 mac_muladd_8s_8s_16s_16_4_1_U55 mac_muladd_8s_8s_16s_16_4_1_U65 add_ln23_11_fu_993_p2 mac_muladd_8s_8s_16s_16_4_1_U89 mul_8s_8s_16_5_1_U29 mac_muladd_8s_8s_16s_16_4_1_U56 mul_8s_8s_16_5_1_U6 mac_muladd_8s_8s_16s_16_4_1_U66 mac_muladd_8s_8s_16s_16_4_1_U89 mac_muladd_8s_8s_16s_16_4_1_U56 mac_muladd_8s_8s_16s_16_4_1_U66 add_ln23_15_fu_1000_p2 mac_muladd_8s_8s_16s_16_4_1_U90 mul_8s_8s_16_5_1_U30 mac_muladd_8s_8s_16s_16_4_1_U61 mul_8s_8s_16_5_1_U9 mac_muladd_8s_8s_16s_16_4_1_U71 mac_muladd_8s_8s_16s_16_4_1_U90 mac_muladd_8s_8s_16s_16_4_1_U61 mac_muladd_8s_8s_16s_16_4_1_U71 add_ln23_19_fu_1005_p2 mac_muladd_8s_8s_16s_16_4_1_U91 mul_8s_8s_16_5_1_U31 mac_muladd_8s_8s_16s_16_4_1_U53 mul_8s_8s_16_5_1_U3 mac_muladd_8s_8s_16s_16_4_1_U72 mac_muladd_8s_8s_16s_16_4_1_U91 mac_muladd_8s_8s_16s_16_4_1_U53 mac_muladd_8s_8s_16s_16_4_1_U72 add_ln23_23_fu_1009_p2 mac_muladd_8s_8s_16s_16_4_1_U92 mul_8s_8s_16_5_1_U32 mac_muladd_8s_8s_16s_16_4_1_U54 mul_8s_8s_16_5_1_U4 mac_muladd_8s_8s_16s_16_4_1_U77 mac_muladd_8s_8s_16s_16_4_1_U92 mac_muladd_8s_8s_16s_16_4_1_U54 mac_muladd_8s_8s_16s_16_4_1_U77 add_ln23_27_fu_1013_p2 mac_muladd_8s_8s_16s_16_4_1_U95 mul_8s_8s_16_5_1_U33 mac_muladd_8s_8s_16s_16_4_1_U57 mul_8s_8s_16_5_1_U7 mac_muladd_8s_8s_16s_16_4_1_U78 mac_muladd_8s_8s_16s_16_4_1_U95 mac_muladd_8s_8s_16s_16_4_1_U57 mac_muladd_8s_8s_16s_16_4_1_U78 add_ln23_31_fu_1020_p2 mac_muladd_8s_8s_16s_16_4_1_U96 mul_8s_8s_16_5_1_U34 mac_muladd_8s_8s_16s_16_4_1_U58 mul_8s_8s_16_5_1_U8 mac_muladd_8s_8s_16s_16_4_1_U86 mac_muladd_8s_8s_16s_16_4_1_U96 mac_muladd_8s_8s_16s_16_4_1_U58 mac_muladd_8s_8s_16s_16_4_1_U86 add_ln23_35_fu_1024_p2 mac_muladd_8s_8s_16s_16_4_1_U97 mul_8s_8s_16_5_1_U35 mac_muladd_8s_8s_16s_16_4_1_U62 mul_8s_8s_16_5_1_U10 mac_muladd_8s_8s_16s_16_4_1_U87 mac_muladd_8s_8s_16s_16_4_1_U97 mac_muladd_8s_8s_16s_16_4_1_U62 mac_muladd_8s_8s_16s_16_4_1_U87 add_ln23_39_fu_1028_p2 mac_muladd_8s_8s_16s_16_4_1_U98 mul_8s_8s_16_5_1_U36 mac_muladd_8s_8s_16s_16_4_1_U63 mul_8s_8s_16_5_1_U11 mac_muladd_8s_8s_16s_16_4_1_U93 mac_muladd_8s_8s_16s_16_4_1_U98 mac_muladd_8s_8s_16s_16_4_1_U63 mac_muladd_8s_8s_16s_16_4_1_U93 add_ln23_43_fu_1032_p2 mac_muladd_8s_8s_16s_16_4_1_U101 mul_8s_8s_16_5_1_U37 mac_muladd_8s_8s_16s_16_4_1_U64 mul_8s_8s_16_5_1_U12 mac_muladd_8s_8s_16s_16_4_1_U94 mac_muladd_8s_8s_16s_16_4_1_U101 mac_muladd_8s_8s_16s_16_4_1_U64 mac_muladd_8s_8s_16s_16_4_1_U94 add_ln23_47_fu_1039_p2 mac_muladd_8s_8s_16s_16_4_1_U102 mul_8s_8s_16_5_1_U38 mac_muladd_8s_8s_16s_16_4_1_U67 mul_8s_8s_16_5_1_U13 mac_muladd_8s_8s_16s_16_4_1_U99 mac_muladd_8s_8s_16s_16_4_1_U102 mac_muladd_8s_8s_16s_16_4_1_U67 mac_muladd_8s_8s_16s_16_4_1_U99 add_ln23_51_fu_1043_p2 mac_muladd_8s_8s_16s_16_4_1_U103 mul_8s_8s_16_5_1_U39 mac_muladd_8s_8s_16s_16_4_1_U68 mul_8s_8s_16_5_1_U14 mac_muladd_8s_8s_16s_16_4_1_U100 mac_muladd_8s_8s_16s_16_4_1_U103 mac_muladd_8s_8s_16s_16_4_1_U68 mac_muladd_8s_8s_16s_16_4_1_U100 add_ln23_55_fu_1047_p2 mac_muladd_8s_8s_16s_16_4_1_U104 mul_8s_8s_16_5_1_U40 mac_muladd_8s_8s_16s_16_4_1_U69 mul_8s_8s_16_5_1_U15 mac_muladd_8s_8s_16s_16_4_1_U105 mac_muladd_8s_8s_16s_16_4_1_U104 mac_muladd_8s_8s_16s_16_4_1_U69 mac_muladd_8s_8s_16s_16_4_1_U105 add_ln23_59_fu_1051_p2 mac_muladd_8s_8s_16s_16_4_1_U107 mul_8s_8s_16_5_1_U41 mac_muladd_8s_8s_16s_16_4_1_U70 mul_8s_8s_16_5_1_U16 mac_muladd_8s_8s_16s_16_4_1_U106 mac_muladd_8s_8s_16s_16_4_1_U107 mac_muladd_8s_8s_16s_16_4_1_U70 mac_muladd_8s_8s_16s_16_4_1_U106 add_ln23_63_fu_1055_p2 mac_muladd_8s_8s_16s_16_4_1_U108 mul_8s_8s_16_5_1_U42 mac_muladd_8s_8s_16s_16_4_1_U73 mul_8s_8s_16_5_1_U17 mac_muladd_8s_8s_16s_16_4_1_U109 mac_muladd_8s_8s_16s_16_4_1_U108 mac_muladd_8s_8s_16s_16_4_1_U73 mac_muladd_8s_8s_16s_16_4_1_U109 add_ln23_67_fu_1059_p2 mac_muladd_8s_8s_16s_16_4_1_U110 mul_8s_8s_16_5_1_U43 mac_muladd_8s_8s_16s_16_4_1_U74 mul_8s_8s_16_5_1_U18 mac_muladd_8s_8s_16s_16_4_1_U111 mac_muladd_8s_8s_16s_16_4_1_U110 mac_muladd_8s_8s_16s_16_4_1_U74 mac_muladd_8s_8s_16s_16_4_1_U111 add_ln23_71_fu_1063_p2 mac_muladd_8s_8s_16s_16_4_1_U112 mul_8s_8s_16_5_1_U44 mac_muladd_8s_8s_16s_16_4_1_U75 mul_8s_8s_16_5_1_U19 mac_muladd_8s_8s_16s_16_4_1_U113 mac_muladd_8s_8s_16s_16_4_1_U112 mac_muladd_8s_8s_16s_16_4_1_U75 mac_muladd_8s_8s_16s_16_4_1_U113 add_ln23_75_fu_1067_p2 mac_muladd_8s_8s_16s_16_4_1_U114 mul_8s_8s_16_5_1_U45 mac_muladd_8s_8s_16s_16_4_1_U76 mul_8s_8s_16_5_1_U20 mac_muladd_8s_8s_16s_16_4_1_U115 mac_muladd_8s_8s_16s_16_4_1_U114 mac_muladd_8s_8s_16s_16_4_1_U76 mac_muladd_8s_8s_16s_16_4_1_U115 add_ln23_79_fu_1071_p2 mac_muladd_8s_8s_16s_16_4_1_U116 mul_8s_8s_16_5_1_U46 mac_muladd_8s_8s_16s_16_4_1_U79 mul_8s_8s_16_5_1_U21 mac_muladd_8s_8s_16s_16_4_1_U119 mac_muladd_8s_8s_16s_16_4_1_U116 mac_muladd_8s_8s_16s_16_4_1_U79 mac_muladd_8s_8s_16s_16_4_1_U119 add_ln23_83_fu_1075_p2 mac_muladd_8s_8s_16s_16_4_1_U117 mul_8s_8s_16_5_1_U47 mac_muladd_8s_8s_16s_16_4_1_U80 mul_8s_8s_16_5_1_U22 mac_muladd_8s_8s_16s_16_4_1_U120 mac_muladd_8s_8s_16s_16_4_1_U117 mac_muladd_8s_8s_16s_16_4_1_U80 mac_muladd_8s_8s_16s_16_4_1_U120 add_ln23_87_fu_1079_p2 mac_muladd_8s_8s_16s_16_4_1_U118 mul_8s_8s_16_5_1_U48 mac_muladd_8s_8s_16s_16_4_1_U81 mul_8s_8s_16_5_1_U23 mac_muladd_8s_8s_16s_16_4_1_U121 mac_muladd_8s_8s_16s_16_4_1_U118 mac_muladd_8s_8s_16s_16_4_1_U81 mac_muladd_8s_8s_16s_16_4_1_U121 add_ln23_91_fu_1083_p2 mac_muladd_8s_8s_16s_16_4_1_U122 mul_8s_8s_16_5_1_U49 mac_muladd_8s_8s_16s_16_4_1_U82 mul_8s_8s_16_5_1_U24 mac_muladd_8s_8s_16s_16_4_1_U123 mac_muladd_8s_8s_16s_16_4_1_U122 mac_muladd_8s_8s_16s_16_4_1_U82 mac_muladd_8s_8s_16s_16_4_1_U123 add_ln23_95_fu_1087_p2 mac_muladd_8s_8s_16s_16_4_1_U124 mul_8s_8s_16_5_1_U50 mac_muladd_8s_8s_16s_16_4_1_U88 mul_8s_8s_16_5_1_U28 mac_muladd_8s_8s_16s_16_4_1_U125 mac_muladd_8s_8s_16s_16_4_1_U124 mac_muladd_8s_8s_16s_16_4_1_U88 mac_muladd_8s_8s_16s_16_4_1_U125 add_ln23_99_fu_1091_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>matrix_mult</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>5.415</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>26</Best-caseLatency>
+                    <Average-caseLatency>26</Average-caseLatency>
+                    <Worst-caseLatency>26</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.141 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.141 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.141 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>13</PipelineInitiationInterval>
+                    <PipelineDepth>27</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../source/tut3B_Function_Reshape/matrix_mult.cpp:23</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>75</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>34</UTIL_DSP>
+                    <FF>8612</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>8</UTIL_FF>
+                    <LUT>4838</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>9</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U83" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U25" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U51" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U1" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U59" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U83" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U51" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U59" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_3_fu_983_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U84" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U26" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U52" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U60" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U84" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U52" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U60" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_7_fu_988_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U85" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U27" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U55" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U5" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U65" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U85" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U55" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U65" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_11_fu_993_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U89" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U29" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U56" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U6" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U66" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U89" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U56" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U66" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_15_fu_1000_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U90" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U30" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U61" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_22" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U9" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U71" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_24" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U90" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U61" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U71" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_19_fu_1005_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U91" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_25" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U31" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U53" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_27" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U3" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_28" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U72" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_29" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U91" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U53" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U72" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_22" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_23_fu_1009_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U92" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U32" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_31" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U54" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U4" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U77" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_34" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U92" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_24" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U54" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_25" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U77" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_27_fu_1013_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_27" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U95" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_35" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U33" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_36" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U57" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_37" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U7" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_38" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U78" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U95" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_28" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U57" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_29" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U78" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_31_fu_1020_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_31" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U96" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_40" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U34" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U58" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U8" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_43" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U86" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U96" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U58" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U86" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_34" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_35_fu_1024_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_35" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U97" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U35" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U62" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U10" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_48" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U87" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U97" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_36" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U62" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_37" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U87" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_38" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_39_fu_1028_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U98" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_50" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U36" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U63" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U11" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_53" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U93" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_54" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U98" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_40" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U63" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U93" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_43_fu_1032_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_43" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U101" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_55" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U37" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U64" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_57" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U12" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_58" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U94" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U101" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U64" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U94" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_47_fu_1039_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U102" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_60" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U38" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_61" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U67" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_62" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U13" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_63" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U99" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_64" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U102" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_48" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U67" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U99" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_50" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_51_fu_1043_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U103" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_65" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U39" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_66" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U68" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_67" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U14" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_68" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U100" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_69" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U103" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U68" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_53" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U100" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_54" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_55_fu_1047_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_55" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U104" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_70" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U40" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_71" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U69" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_72" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U15" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_73" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U105" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_74" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U104" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U69" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_57" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U105" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_58" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_59_fu_1051_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U107" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_75" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U41" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_76" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U70" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U16" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_78" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U106" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_79" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U107" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_60" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U70" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_61" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U106" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_62" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_63_fu_1055_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_63" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U108" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_80" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U42" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_81" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U73" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_82" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U17" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_83" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U109" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_84" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U108" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_64" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U73" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_65" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U109" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_66" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_67_fu_1059_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_67" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U110" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_85" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U43" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_86" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U74" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_87" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U18" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_88" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U111" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_89" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U110" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_68" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U74" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_69" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U111" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_70" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_71_fu_1063_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_71" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U112" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_90" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U44" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U75" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_92" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U19" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_93" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U113" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_94" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U112" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_72" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U75" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_73" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U113" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_74" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_75_fu_1067_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_75" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U114" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_95" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U45" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_96" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U76" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_97" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U20" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_98" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U115" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_99" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U114" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_76" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U76" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U115" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_78" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_79_fu_1071_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_79" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U116" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_100" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U46" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_101" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U79" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_102" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U21" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_103" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U119" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_104" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U116" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_80" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U79" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_81" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U119" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_82" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_83_fu_1075_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_83" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U117" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_105" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U47" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_106" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U80" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_107" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U22" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_108" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U120" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_109" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U117" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_84" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U80" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_85" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U120" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_86" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_87_fu_1079_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_87" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U118" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_110" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U48" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_111" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U81" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_112" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U23" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_113" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U121" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_114" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U118" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_88" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U81" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_89" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U121" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_90" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_91_fu_1083_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U122" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_115" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U49" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_116" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U82" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_117" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U24" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_118" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U123" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_119" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U122" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_92" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U82" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_93" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U123" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_94" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_95_fu_1087_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_95" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U124" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_120" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U50" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_121" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U88" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_122" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_5_1_U28" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_123" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U125" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln23_124" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U124" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_96" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U88" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_97" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U125" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_98" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_99_fu_1091_p2" SOURCE="../source/tut3B_Function_Reshape/matrix_mult.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln23_99" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_compile pipeline_loops="0"/>
+        <config_interface m_axi_alignment_size="1"/>
+        <config_rtl auto_prefix="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="a" index="0" direction="in" srcType="char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="a_address0" name="a_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="a_ce0" name="a_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="a_q0" name="a_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="a_address1" name="a_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="a_ce1" name="a_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="a_q1" name="a_q1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="b" index="1" direction="in" srcType="char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="b_address0" name="b_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="b_ce0" name="b_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="b_q0" name="b_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="b_address1" name="b_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="b_ce1" name="b_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="b_q1" name="b_q1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="prod" index="2" direction="out" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="prod_address0" name="prod_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="prod_ce0" name="prod_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="prod_we0" name="prod_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="prod_d0" name="prod_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="prod_address1" name="prod_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="prod_ce1" name="prod_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="prod_we1" name="prod_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="prod_d1" name="prod_d1" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="a_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="a_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>a_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="a_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="40">
+            <portMaps>
+                <portMap portMapName="a_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>a_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="a_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="a_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>a_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="a_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="40">
+            <portMaps>
+                <portMap portMapName="a_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>a_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="b_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="b_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>b_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="b_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="40">
+            <portMaps>
+                <portMap portMapName="b_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>b_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="b_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="b_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>b_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="b_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="40">
+            <portMaps>
+                <portMap portMapName="b_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>b_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="prod_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="5">
+            <portMaps>
+                <portMap portMapName="prod_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>prod_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="prod"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="prod_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="prod_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>prod_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="prod"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="prod_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="5">
+            <portMaps>
+                <portMap portMapName="prod_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>prod_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="prod"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="prod_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="prod_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>prod_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="prod"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="a_address0">out, 3</column>
+                    <column name="a_address1">out, 3</column>
+                    <column name="a_q0">in, 40</column>
+                    <column name="a_q1">in, 40</column>
+                    <column name="b_address0">out, 3</column>
+                    <column name="b_address1">out, 3</column>
+                    <column name="b_q0">in, 40</column>
+                    <column name="b_q1">in, 40</column>
+                    <column name="prod_address0">out, 5</column>
+                    <column name="prod_address1">out, 5</column>
+                    <column name="prod_d0">out, 16</column>
+                    <column name="prod_d1">out, 16</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="a">in, char*</column>
+                    <column name="b">in, char*</column>
+                    <column name="prod">out, short*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="a">a_address0, port, offset</column>
+                    <column name="a">a_ce0, port, </column>
+                    <column name="a">a_q0, port, </column>
+                    <column name="a">a_address1, port, offset</column>
+                    <column name="a">a_ce1, port, </column>
+                    <column name="a">a_q1, port, </column>
+                    <column name="b">b_address0, port, offset</column>
+                    <column name="b">b_ce0, port, </column>
+                    <column name="b">b_q0, port, </column>
+                    <column name="b">b_address1, port, offset</column>
+                    <column name="b">b_ce1, port, </column>
+                    <column name="b">b_q1, port, </column>
+                    <column name="prod">prod_address0, port, offset</column>
+                    <column name="prod">prod_ce0, port, </column>
+                    <column name="prod">prod_we0, port, </column>
+                    <column name="prod">prod_d0, port, </column>
+                    <column name="prod">prod_address1, port, offset</column>
+                    <column name="prod">prod_ce1, port, </column>
+                    <column name="prod">prod_we1, port, </column>
+                    <column name="prod">prod_d1, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="array_reshape" status="invalid" location="../source/tut3B_Function_Reshape/matrix_mult.cpp:8" parentFunction="matrix_mult" variable="a" isDirective="0" options="variable=a complete dim=2">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="array_reshape" status="invalid" location="../source/tut3B_Function_Reshape/matrix_mult.cpp:9" parentFunction="matrix_mult" variable="b" isDirective="0" options="variable=b complete dim=1">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="../source/tut3B_Function_Reshape/matrix_mult.cpp:10" parentFunction="matrix_mult" variable="" isDirective="0" options="ii=1"/>
+    </PragmaReport>
+</profile>

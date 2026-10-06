@@ -1,0 +1,62 @@
+{
+    "name": "matrix_mult",
+    "type": "function",
+    "pipelined": "yes",
+    "dataflowed": "no",
+    "original_ti": 687,
+    "original_tl": 686,
+    "calculated_ti": -1,
+    "calculated_tl": -1,
+    "assume_ti": -1,
+    "assume_tl": -1,
+    "CIs": [],
+    "loops": [
+        {
+            "name": "Row",
+            "type": "loop",
+            "trip_count": 5,
+            "pipelined": "no",
+            "dataflowed": "no",
+            "original_ti": 685,
+            "original_tl": 685,
+            "calculated_ti": -1,
+            "calculated_tl": -1,
+            "assume_ti": -1,
+            "assume_tl": -1,
+            "CIs": [],
+            "loops": [
+                {
+                    "name": "Col",
+                    "type": "loop",
+                    "trip_count": 5,
+                    "pipelined": "no",
+                    "dataflowed": "no",
+                    "original_ti": 135,
+                    "original_tl": 135,
+                    "calculated_ti": -1,
+                    "calculated_tl": -1,
+                    "assume_ti": -1,
+                    "assume_tl": -1,
+                    "CIs": [],
+                    "loops": [
+                        {
+                            "name": "Product",
+                            "type": "loop",
+                            "trip_count": 5,
+                            "pipelined": "no",
+                            "dataflowed": "no",
+                            "original_ti": 25,
+                            "original_tl": 25,
+                            "calculated_ti": -1,
+                            "calculated_tl": -1,
+                            "assume_ti": -1,
+                            "assume_tl": -1,
+                            "CIs": [],
+                            "loops": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

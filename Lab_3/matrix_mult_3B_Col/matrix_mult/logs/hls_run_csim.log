@@ -1,0 +1,29 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir D:/SOCD334264/Lab_3/matrix_mult_3B_Col/matrix_mult 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/SOCD334264/Lab_3/matrix_mult_3B_Col/matrix_mult/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/SOCD334264/Lab_3/matrix_mult_3B_Col/matrix_mult'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../source/tut3B_Col/matrix_mult.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/SOCD334264/Lab_3/source/tut3B_Col/matrix_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../source/tut3B_Col/matrix_mult.h' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/SOCD334264/Lab_3/source/tut3B_Col/matrix_mult.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../source/tut3B_Col/matrix_mult_test.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/SOCD334264/Lab_3/source/tut3B_Col/matrix_mult_test.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=matrix_mult' from hls_config.cfg(6)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=50ns' from hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/SOCD334264/Lab_3/matrix_mult_3B_Col/matrix_mult/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../source/tut3B_Col/matrix_mult_test.cpp in debug mode
+   Compiling ../../../../../source/tut3B_Col/matrix_mult.cpp in debug mode
+   Generating csim.exe
+Test passed!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.955 seconds; peak allocated memory: 143.988 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 9s

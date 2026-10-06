@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/SOCD334264/Zynq_Book/zynq_interrupt_platform/zynq_fsbl/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

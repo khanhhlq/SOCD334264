@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "D:\\SOCD334264\\Lab_3\\matrix_mult_3C_prj",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=matrix_mult",
+      "-c",
+      "D:\\SOCD334264\\Lab_3\\source\\tut3C\\matrix_mult.cpp"
+    ],
+    "file": "D:\\SOCD334264\\Lab_3\\source\\tut3C\\matrix_mult.cpp"
+  },
+  {
+    "directory": "D:\\SOCD334264\\Lab_3\\matrix_mult_3C_prj",
+    "arguments": [
+      "C:\\AMDDesignTools\\2026.1\\Vitis\\win64\\tools\\clang-16\\bin\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2026.1\\Vitis\\include",
+      "-c",
+      "D:\\SOCD334264\\Lab_3\\source\\tut3C\\matrix_mult_test.cpp"
+    ],
+    "file": "D:\\SOCD334264\\Lab_3\\source\\tut3C\\matrix_mult_test.cpp"
+  }
+]

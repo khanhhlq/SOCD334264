@@ -1,0 +1,374 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 18-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 22:38:23 2026
+# Process ID         : 4204
+# Current directory  : D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_axi_smc_0_synth_1
+# Command line       : vivado.exe -log zynq_interrupt_system_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_interrupt_system_axi_smc_0.tcl
+# Log file           : D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_axi_smc_0_synth_1/zynq_interrupt_system_axi_smc_0.vds
+# Journal file       : D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_axi_smc_0_synth_1\vivado.jou
+# Running On         : KHANHLQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7735HS with Radeon Graphics        
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14286 MB
+# Swap memory        : 16362 MB
+# Total Virtual      : 30648 MB
+# Available Virtual  : 1865 MB
+#-----------------------------------------------------------
+source zynq_interrupt_system_axi_smc_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 587.773 ; gain = 268.586
+Command: synth_design -top zynq_interrupt_system_axi_smc_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24968
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1422.461 ; gain = 577.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'zynq_interrupt_system_axi_smc_0' [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/synth/zynq_interrupt_system_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_bff6' [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/synth/bd_bff6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_bff6_sc_ul_0' [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/ip/ip_0/synth/bd_bff6_sc_ul_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bff6_sc_ul_0' (0#1) [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/ip/ip_0/synth/bd_bff6_sc_ul_0.sv:53]
+WARNING: [Synth 8-7071] port 'aresetn_out' of module 'bd_bff6_sc_ul_0' is unconnected for instance 'sc_ul' [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/synth/bd_bff6.v:305]
+WARNING: [Synth 8-7071] port 'pc_asserted' of module 'bd_bff6_sc_ul_0' is unconnected for instance 'sc_ul' [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/synth/bd_bff6.v:305]
+WARNING: [Synth 8-7071] port 'pc_status' of module 'bd_bff6_sc_ul_0' is unconnected for instance 'sc_ul' [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/synth/bd_bff6.v:305]
+WARNING: [Synth 8-7023] instance 'sc_ul' of module 'bd_bff6_sc_ul_0' has 100 connections declared, but only 97 given [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/synth/bd_bff6.v:305]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bff6' (0#1) [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/synth/bd_bff6.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_interrupt_system_axi_smc_0' (0#1) [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/synth/zynq_interrupt_system_axi_smc_0.v:53]
+INFO: [Synth 8-7129] Port din[95] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[94] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[93] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[92] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[91] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[90] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[89] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[88] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[87] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[86] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[85] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[84] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[83] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[82] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[81] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[80] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[79] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[78] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[77] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[76] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[75] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[74] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[73] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[72] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[71] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[70] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[69] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[68] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[67] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[63] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[62] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[61] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[60] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[59] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[58] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[57] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[56] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[55] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[54] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[53] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[52] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[51] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[50] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[49] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[48] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[47] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[46] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[45] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[44] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[43] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[42] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[41] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[40] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[39] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[38] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[37] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[36] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[35] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[31] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[30] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[29] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[28] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[27] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[26] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[25] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[24] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[23] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[22] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[21] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[20] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[19] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[18] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[17] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[16] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[15] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[14] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[13] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[12] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[11] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[10] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[9] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[7] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[6] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[5] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[4] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3] in module sc_ultralite_v1_0_1_mux_hot__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3071] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3070] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3069] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3068] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3067] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3066] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3065] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3064] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3063] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3062] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3061] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3060] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[3059] in module sc_ultralite_v1_0_1_mux_hot__parameterized10 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1637.344 ; gain = 792.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1637.344 ; gain = 792.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1637.344 ; gain = 792.695
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1637.344 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/ip/ip_0/bd_bff6_sc_ul_0_cdc.xdc] for cell 'inst/sc_ul/inst'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter REF_PIN_NAME=~*CLR -of_objects [get_cells -hierarchical -filter {NAME =~ *si_checker_inst/*}]'. [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/ip/ip_0/bd_bff6_sc_ul_0_cdc.xdc:21]
+Finished Parsing XDC File [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/ip/ip_0/bd_bff6_sc_ul_0_cdc.xdc] for cell 'inst/sc_ul/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/bd_0/ip/ip_0/bd_bff6_sc_ul_0_cdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynq_interrupt_system_axi_smc_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/zynq_interrupt_system_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/smartconnect.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_smc_0/smartconnect.xdc] for cell 'inst'
+Parsing XDC File [D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_axi_smc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_axi_smc_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1713.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1718.375 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1718.375 ; gain = 873.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1718.375 ; gain = 873.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1718.375 ; gain = 873.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_write.w_state_reg' in module 'sc_ultralite_v1_0_1_sasd_lite'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_read.r_state_reg' in module 'sc_ultralite_v1_0_1_sasd_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                              000 | 00000000000000000000000000000000
+                   R_ARB |                              001 | 00000000000000000000000000000001
+                R_TARGET |                              010 | 00000000000000000000000000000010
+                 R_WIDTH |                              011 | 00000000000000000000000000000011
+                    R_RX |                              100 | 00000000000000000000000000000100
+                    R_TX |                              101 | 00000000000000000000000000000101
+                R_DECERR |                              110 | 00000000000000000000000000000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_read.r_state_reg' using encoding 'sequential' in module 'sc_ultralite_v1_0_1_sasd_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                   W_ARB |                              001 | 00000000000000000000000000000001
+                W_TARGET |                              010 | 00000000000000000000000000000010
+                    W_RX |                              011 | 00000000000000000000000000000011
+                    W_TX |                              100 | 00000000000000000000000000000100
+                  W_NULL |                              101 | 00000000000000000000000000000101
+              W_COMPLETE |                              110 | 00000000000000000000000000000111
+               W_RECOVER |                              111 | 00000000000000000000000000000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_write.w_state_reg' using encoding 'sequential' in module 'sc_ultralite_v1_0_1_sasd_lite'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 1718.375 ; gain = 873.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:41 . Memory (MB): peak = 1744.223 ; gain = 899.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:44 ; elapsed = 00:01:52 . Memory (MB): peak = 1865.277 ; gain = 1020.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:01:56 . Memory (MB): peak = 1926.664 ; gain = 1082.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1939.508 ; gain = 1094.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    20|
+|2     |LUT1   |     5|
+|3     |LUT2   |    57|
+|4     |LUT3   |    44|
+|5     |LUT4   |    88|
+|6     |LUT5   |    95|
+|7     |LUT6   |   288|
+|8     |MUXF7  |     2|
+|9     |FDRE   |   466|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:56 . Memory (MB): peak = 2142.332 ; gain = 1216.652
+Synthesis Optimization Complete : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 2142.332 ; gain = 1297.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2148.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2152.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7fd52693
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+131 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:28 . Memory (MB): peak = 2152.621 ; gain = 1550.949
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2152.621 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_axi_smc_0_synth_1/zynq_interrupt_system_axi_smc_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP zynq_interrupt_system_axi_smc_0, cache-ID = bf9f384041570a4c
+INFO: [Coretcl 2-1174] Renamed 21 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2152.621 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/SOCD334264/Zynq_Book/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_axi_smc_0_synth_1/zynq_interrupt_system_axi_smc_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file zynq_interrupt_system_axi_smc_0_utilization_synth.rpt -pb zynq_interrupt_system_axi_smc_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 22:41:30 2026...

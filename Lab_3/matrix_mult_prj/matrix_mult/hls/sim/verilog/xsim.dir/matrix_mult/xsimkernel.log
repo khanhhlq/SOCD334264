@@ -1,0 +1,7 @@
+Running: xsim.dir/matrix_mult/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=matrix_mult_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb matrix_mult.wdb -simrunnum 0 -socket 58288
+Design successfully loaded
+Design Loading Memory Usage: 24088 KB (Peak: 24088 KB)
+Design Loading CPU Usage: 171 ms
+Simulation completed
+Simulation Memory Usage: 30792 KB (Peak: 30792 KB)
+Simulation CPU Usage: 202 ms

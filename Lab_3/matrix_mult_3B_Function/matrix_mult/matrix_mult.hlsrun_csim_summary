@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\matrix_mult.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/06/26 19:28:30",
+ "timestampMillis": "1791289710464",
+ "buildStep": {
+  "cmdId": "f32fd32f-fae1-4c7a-9c23-d36809fced5f",
+  "name": "vitis-run",
+  "logFile": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\logs\\matrix_mult.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function\\hls_config.cfg --work_dir matrix_mult ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function\\hls_config.cfg",
+   "--work_dir",
+   "matrix_mult"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:28:30",
+ "timestampMillis": "1791289710465",
+ "status": {
+  "cmdId": "f32fd32f-fae1-4c7a-9c23-d36809fced5f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/06/26 19:28:36",
+ "timestampMillis": "1791289716122",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/SOCD334264\\Lab_3\\source\\tut3B_Function\\matrix_mult.cpp",
+     "D:/SOCD334264\\Lab_3\\source\\tut3B_Function\\matrix_mult.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/06/26 19:28:36",
+ "timestampMillis": "1791289716124",
+ "buildStep": {
+  "cmdId": "259e17ff-bbbd-4ec7-88f6-06479a031e78",
+  "name": "",
+  "logFile": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:28:36",
+ "timestampMillis": "1791289716124",
+ "status": {
+  "cmdId": "259e17ff-bbbd-4ec7-88f6-06479a031e78",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:28:38",
+ "timestampMillis": "1791289718218",
+ "status": {
+  "cmdId": "259e17ff-bbbd-4ec7-88f6-06479a031e78",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:28:38",
+ "timestampMillis": "1791289718397",
+ "status": {
+  "cmdId": "f32fd32f-fae1-4c7a-9c23-d36809fced5f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:28:38",
+ "timestampMillis": "1791289718398",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:28:38",
+ "timestampMillis": "1791289718399",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

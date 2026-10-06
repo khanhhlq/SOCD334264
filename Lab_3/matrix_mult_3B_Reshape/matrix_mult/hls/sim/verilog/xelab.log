@@ -1,0 +1,59 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrix_mult_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj matrix_mult.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_22 -L floating_point_v7_0_27 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./matrix_mult_subsystem -s matrix_mult 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/AESL_automem_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/AESL_automem_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/AESL_automem_prod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_prod
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/matrix_mult.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrix_mult_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/matrix_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/matrix_mult_flow_control_loop_delay_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult_flow_control_loop_delay_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/matrix_mult_mac_muladd_8s_8s_16s_16_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult_mac_muladd_8s_8s_16s_16_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrix_mult_mac_muladd_8s_8s_16s_16_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/matrix_mult_mul_8s_8s_16_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult_mul_8s_8s_16_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/matrix_mult_subsystem/matrix_mult_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape/matrix_mult/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.matrix_mult_subsystem_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.matrix_mult_mul_8s_8s_16_5_1(NUM...
+Compiling module xil_defaultlib.matrix_mult_mac_muladd_8s_8s_16s...
+Compiling module xil_defaultlib.matrix_mult_mac_muladd_8s_8s_16s...
+Compiling module xil_defaultlib.matrix_mult_flow_control_loop_de...
+Compiling module xil_defaultlib.matrix_mult
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.AESL_automem_a
+Compiling module xil_defaultlib.AESL_automem_b
+Compiling module xil_defaultlib.AESL_automem_prod
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_matrix_mult_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot matrix_mult

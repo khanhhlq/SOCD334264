@@ -1,0 +1,2 @@
+matrix_mult_mac_muladd_8s_8s_16s_16_4_1
+matrix_mult

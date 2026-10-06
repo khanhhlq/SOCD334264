@@ -1,0 +1,110 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../source/tut3B/matrix_mult.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/SOCD334264/Lab_3/source/tut3B/matrix_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../source/tut3B/matrix_mult.h' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/SOCD334264/Lab_3/source/tut3B/matrix_mult.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.cflags=-I../source/tut3B' from hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../source/tut3B/matrix_mult_test.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/SOCD334264/Lab_3/source/tut3B/matrix_mult_test.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.cflags=-I../source/tut3B' from hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'syn.top=matrix_mult' from hls_config.cfg(6)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=5ns' from hls_config.cfg(12)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from hls_config.cfg(13)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 5.304 seconds; current allocated memory: 143.230 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../source/tut3B/matrix_mult.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.321 seconds; current allocated memory: 145.289 MB.
+INFO: [HLS 200-1995] There were 55 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 41 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 31 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 33 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 11.207 seconds; current allocated memory: 148.215 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 148.215 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 152.336 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 153.871 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 174.809 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Col'(../source/tut3B/matrix_mult.cpp:12:12) and 'Product'(../source/tut3B/matrix_mult.cpp:17:19) in function 'matrix_mult' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Row'(../source/tut3B/matrix_mult.cpp:9:9) and 'Col'(../source/tut3B/matrix_mult.cpp:12:12) in function 'matrix_mult' into perfectly nested loops.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'Product' (../source/tut3B/matrix_mult.cpp:17:19) and outer loop 'Col' (../source/tut3B/matrix_mult.cpp:12:12) in function 'matrix_mult' successfully.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'Col_Product'  and outer loop 'Row' (../source/tut3B/matrix_mult.cpp:9:9) in function 'matrix_mult' successfully.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 174.812 MB.
+INFO: [HLS 200-2255] Checking Wire Delay Status: Wire Delay Mode is ON
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrix_mult' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_mult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln20) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col_Product'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'or' operation 1 bit ('empty_6', ../source/tut3B/matrix_mult.cpp:9) to 'icmp' operation 1 bit ('icmp_ln17', ../source/tut3B/matrix_mult.cpp:17) (combination delay: 5.258 ns) to honor II or Latency constraint in region 'Row_Col_Product'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'and' operation 1 bit ('and_ln9', ../source/tut3B/matrix_mult.cpp:9) to 'store' operation ('k_write_ln17', ../source/tut3B/matrix_mult.cpp:17) of variable 'k_3', ../source/tut3B/matrix_mult.cpp:17 3 bit on local variable 'k', ../source/tut3B/matrix_mult.cpp:17 (combination delay: 6.174 ns) to honor II or Latency constraint in region 'Row_Col_Product'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-2253] Unable to schedule 'load' operation 8 bit ('b_load', ../source/tut3B/matrix_mult.cpp:20) on array 'b' in the first 1 clock cycle(s).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'Row_Col_Product'
+WARNING: [HLS 200-871] Estimated clock period (9.412 ns) exceeds the target (target clock period: 5.000 ns, clock uncertainty: 1.350 ns, effective delay budget: 3.650 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'matrix_mult' consists of the following:
+	'icmp' operation 1 bit ('icmp_ln17', ../source/tut3B/matrix_mult.cpp:17) [69]  (1.650 ns)
+	multiplexor before 'phi' operation 1 bit ('icmp_ln176', ../source/tut3B/matrix_mult.cpp:17) with incoming values : ('icmp_ln17', ../source/tut3B/matrix_mult.cpp:17) [26]  (1.588 ns)
+	'phi' operation 1 bit ('icmp_ln176', ../source/tut3B/matrix_mult.cpp:17) with incoming values : ('icmp_ln17', ../source/tut3B/matrix_mult.cpp:17) [26]  (0.000 ns)
+	'and' operation 1 bit ('and_ln9', ../source/tut3B/matrix_mult.cpp:9) [37]  (0.978 ns)
+	'or' operation 1 bit ('empty_6', ../source/tut3B/matrix_mult.cpp:9) [40]  (0.978 ns)
+	'select' operation 3 bit ('k_mid2', ../source/tut3B/matrix_mult.cpp:9) [41]  (0.980 ns)
+	'add' operation 3 bit ('k_3', ../source/tut3B/matrix_mult.cpp:17) [68]  (1.650 ns)
+	'store' operation ('k_write_ln17', ../source/tut3B/matrix_mult.cpp:17) of variable 'k_3', ../source/tut3B/matrix_mult.cpp:17 3 bit on local variable 'k', ../source/tut3B/matrix_mult.cpp:17 [81]  (1.588 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.779 seconds; current allocated memory: 174.812 MB.
+INFO: [HLS 200-2250] Rewind delay = 5 for the pipelined loop 'Row_Col_Product' due to a write-after-write dependence on variable 'empty (no source info)'.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 175.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_mult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/prod' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrix_mult' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrix_mult' pipeline 'Row_Col_Product' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16s_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_mult'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 177.203 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.736 seconds; current allocated memory: 181.645 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.915 seconds; current allocated memory: 183.660 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrix_mult.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrix_mult.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 106.25 MHz
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 3 seconds. Total elapsed time: 27.438 seconds; peak allocated memory: 183.746 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 32s

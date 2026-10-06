@@ -1,0 +1,3 @@
+relativeroot=D:/SOCD334264/Lab_3/matrix_mult_3B_Reshape
+original_argv=--mode hls --cosim --config D:\SOCD334264\Lab_3\matrix_mult_3B_Reshape\hls_config.cfg --work_dir matrix_mult 
+

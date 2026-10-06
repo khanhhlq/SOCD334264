@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/SOCD334264/Zynq_Book/interrupt_counter/build",
+  "command": "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -ID:/SOCD334264/Zynq_Book/interrupt_counter/src -isystem D:/SOCD334264/Zynq_Book/zynq_interrupt_platform/export/zynq_interrupt_platform/sw/standalone_ps7_cortexa9_0/include -isystem C:/AMDDesignTools/2026.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.4.0/include -isystem C:/AMDDesignTools/2026.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.4.0/include-fixed -isystem C:/AMDDesignTools/2026.1/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=D:/SOCD334264/Zynq_Book/zynq_interrupt_platform/export/zynq_interrupt_platform/sw/standalone_ps7_cortexa9_0/Xilinx.spec -ID:/SOCD334264/Zynq_Book/zynq_interrupt_platform/export/zynq_interrupt_platform/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\interrupt_counter.elf.dir\\interrupt_counter_tut_2D.c.obj -c D:\\SOCD334264\\Zynq_Book\\interrupt_counter\\src\\interrupt_counter_tut_2D.c",
+  "file": "D:\\SOCD334264\\Zynq_Book\\interrupt_counter\\src\\interrupt_counter_tut_2D.c",
+  "output": "CMakeFiles\\interrupt_counter.elf.dir\\interrupt_counter_tut_2D.c.obj"
+}
+]

@@ -1,0 +1,25 @@
+{
+    "0": {
+        "name": "matrix_mult",
+        "file": "..\/source\/tut3B\/matrix_mult.cpp",
+        "fileloc": "3",
+        "instructions": "81",
+        "total_instructions": "81",
+        "calls": "",
+        "basicblocks": "5",
+        "memory_accesses": "15",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "6",
+            "T": "2"
+        },
+        "stores": {
+            "L": "12",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

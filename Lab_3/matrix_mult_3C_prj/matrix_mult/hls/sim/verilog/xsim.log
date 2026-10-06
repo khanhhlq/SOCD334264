@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Oct  6 18:08:51 2026
+# Process ID         : 11592
+# Current directory  : D:/SOCD334264/Lab_3/matrix_mult_3C_prj/matrix_mult/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/matrix_mult/xsim_script.tcl}
+# Log file           : D:/SOCD334264/Lab_3/matrix_mult_3C_prj/matrix_mult/hls/sim/verilog/xsim.log
+# Journal file       : D:/SOCD334264/Lab_3/matrix_mult_3C_prj/matrix_mult/hls/sim/verilog\xsim.jou
+# Running On         : KHANHLQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7735HS with Radeon Graphics        
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14286 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 26634 MB
+# Available Virtual  : 2462 MB
+#-----------------------------------------------------------
+source xsim.dir/matrix_mult/xsim_script.tcl
+# xsim {matrix_mult} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=matrix_mult_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {matrix_mult.tcl}
+Time resolution is 1 ps
+source matrix_mult.tcl
+## run all
+UVM_INFO C:/AMDDesignTools/2026.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO C:/AMDDesignTools/2026.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO C:/AMDDesignTools/2026.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------
+Name                         Type                           Size  Value
+-----------------------------------------------------------------------
+uvm_test_top                 matrix_mult_test_lib           -     @342 
+  top_env                    matrix_mult_env                -     @353 
+    matrix_mult_virtual_sqr  matrix_mult_virtual_sequencer  -     @390 
+      rsp_export             uvm_analysis_export            -     @399 
+      seq_item_export        uvm_seq_item_pull_imp          -     @517 
+      arbitration_queue      array                          0     -    
+      lock_queue             array                          0     -    
+      num_last_reqs          integral                       32    'd1  
+      num_last_rsps          integral                       32    'd1  
+    refm                     matrix_mult_reference_model    -     @368 
+      trans_num_idx          integral                       32    'h0  
+    subsys_mon               matrix_mult_subsystem_monitor  -     @381 
+      scbd                   matrix_mult_scoreboard         -     @537 
+        refm                 matrix_mult_reference_model    -     @368 
+          trans_num_idx      integral                       32    'h0  
+    refm                     matrix_mult_reference_model    -     @368 
+    matrix_mult_virtual_sqr  matrix_mult_virtual_sequencer  -     @390 
+    matrix_mult_cfg          matrix_mult_config             -     @367 
+      check_ena              integral                       32    'h0  
+      cover_ena              integral                       32    'h0  
+-----------------------------------------------------------------------
+
+UVM_INFO C:/AMDDesignTools/2026.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "113000"
+// RTL Simulation : 1 / 1 [100.00%] @ "3563000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 3587500 ps : File "C:/AMDDesignTools/2026.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Oct  6 18:08:54 2026...

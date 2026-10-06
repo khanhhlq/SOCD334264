@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="../source/tut3B_Function_Reshape/matrix_mult.cpp" line="10" pragmaType="pipeline" parentfunction="matrix_mult" off="0" ii="1" style=""/>
+<pragma file="../source/tut3B_Function_Reshape/matrix_mult.cpp" line="8" pragmaType="array_reshape" parentfunction="matrix_mult" dim="2" factor="0" mode="complete" variable="a"/>
+<pragma file="../source/tut3B_Function_Reshape/matrix_mult.cpp" line="9" pragmaType="array_reshape" parentfunction="matrix_mult" dim="1" factor="0" mode="complete" variable="b"/>
+</pragmas>

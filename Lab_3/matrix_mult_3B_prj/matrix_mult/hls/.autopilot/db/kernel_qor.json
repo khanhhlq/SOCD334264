@@ -1,0 +1,30 @@
+{
+    "name": "matrix_mult",
+    "type": "function",
+    "pipelined": "yes",
+    "dataflowed": "no",
+    "original_ti": 130,
+    "original_tl": 132,
+    "calculated_ti": -1,
+    "calculated_tl": -1,
+    "assume_ti": -1,
+    "assume_tl": -1,
+    "CIs": [],
+    "loops": [
+        {
+            "name": "Row_Col_Product",
+            "type": "loop",
+            "trip_count": 125,
+            "pipelined": "yes",
+            "dataflowed": "no",
+            "original_ti": 125,
+            "original_tl": 131,
+            "calculated_ti": -1,
+            "calculated_tl": -1,
+            "assume_ti": -1,
+            "assume_tl": -1,
+            "CIs": [],
+            "loops": []
+        }
+    ]
+}

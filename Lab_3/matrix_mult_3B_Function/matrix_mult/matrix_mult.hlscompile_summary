@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\matrix_mult.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/06/26 19:31:45",
+ "timestampMillis": "1791289905622",
+ "buildStep": {
+  "cmdId": "dd9f3127-9589-4415-9a1e-70c3ccb5f3ce",
+  "name": "v++",
+  "logFile": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\logs\\matrix_mult.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function\\hls_config.cfg --work_dir matrix_mult ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function\\hls_config.cfg",
+   "--work_dir",
+   "matrix_mult"
+  ],
+  "iniFiles": [
+   {
+    "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\hls_config.cfg",
+    "content": "part=xc7z020clg484-1\n\n[hls]\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=matrix_mult\nsyn.file=../source/tut3B_Function/matrix_mult.cpp\nsyn.file=../source/tut3B_Function/matrix_mult.h\ntb.file=../source/tut3B_Function/matrix_mult_test.cpp\nclock=5ns\nsyn.compile.pipeline_loops=0"
+   }
+  ],
+  "cwd": "D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:31:45",
+ "timestampMillis": "1791289905622",
+ "status": {
+  "cmdId": "dd9f3127-9589-4415-9a1e-70c3ccb5f3ce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/06/26 19:31:51",
+ "timestampMillis": "1791289911635",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/SOCD334264\\Lab_3\\source\\tut3B_Function\\matrix_mult.cpp",
+     "D:/SOCD334264\\Lab_3\\source\\tut3B_Function\\matrix_mult.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/06/26 19:31:51",
+ "timestampMillis": "1791289911637",
+ "buildStep": {
+  "cmdId": "40f05e66-d46a-403c-9dfd-4be0ad4b32e3",
+  "name": "",
+  "logFile": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\SOCD334264\\Lab_3\\matrix_mult_3B_Function"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:31:51",
+ "timestampMillis": "1791289911637",
+ "status": {
+  "cmdId": "40f05e66-d46a-403c-9dfd-4be0ad4b32e3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:31:51",
+ "timestampMillis": "1791289911637",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:31:51",
+ "timestampMillis": "1791289911638",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:31:51",
+ "timestampMillis": "1791289911638",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:32:15",
+ "timestampMillis": "1791289935736",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:32:15",
+ "timestampMillis": "1791289935737",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:32:15",
+ "timestampMillis": "1791289935737",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:32:15",
+ "timestampMillis": "1791289935737",
+ "status": {
+  "cmdId": "40f05e66-d46a-403c-9dfd-4be0ad4b32e3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/06/26 19:32:15",
+ "timestampMillis": "1791289935908",
+ "status": {
+  "cmdId": "dd9f3127-9589-4415-9a1e-70c3ccb5f3ce",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:32:15",
+ "timestampMillis": "1791289935944",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\reports\\v++_compile_matrix_mult_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/06/26 19:32:15",
+ "timestampMillis": "1791289935944",
+ "report": {
+  "path": "D:/SOCD334264\\Lab_3\\matrix_mult_3B_Function\\matrix_mult\\reports\\.db\\v++_compile_matrix_mult_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

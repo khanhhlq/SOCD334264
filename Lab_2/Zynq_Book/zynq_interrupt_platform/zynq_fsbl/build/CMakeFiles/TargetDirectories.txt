@@ -1,0 +1,4 @@
+D:/SOCD334264/Zynq_Book/zynq_interrupt_platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+D:/SOCD334264/Zynq_Book/zynq_interrupt_platform/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+D:/SOCD334264/Zynq_Book/zynq_interrupt_platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+D:/SOCD334264/Zynq_Book/zynq_interrupt_platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

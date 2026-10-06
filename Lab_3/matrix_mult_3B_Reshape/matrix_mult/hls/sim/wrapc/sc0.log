@@ -1,0 +1,6 @@
+   Build using "C:/AMDDesignTools/2026.1/Vitis/win64/tools/clang-16/bin/clang++"
+   Compiling apatb_matrix_mult.cpp
+   Compiling matrix_mult.cpp_pre.cpp
+   Compiling matrix_mult_test.cpp_pre.cpp
+   Compiling apatb_matrix_mult_ir.ll
+   Generating cosim.tv.exe

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Oct  6 17:51:22 2026
+# Process ID         : 17540
+# Current directory  : D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/matrix_mult/xsim_script.tcl}
+# Log file           : D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/sim/verilog/xsim.log
+# Journal file       : D:/SOCD334264/Lab_3/matrix_mult_3B_prj/matrix_mult/hls/sim/verilog\xsim.jou
+# Running On         : KHANHLQ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7735HS with Radeon Graphics        
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14286 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 26634 MB
+# Available Virtual  : 3521 MB
+#-----------------------------------------------------------
+source xsim.dir/matrix_mult/xsim_script.tcl
+source matrix_mult.tcl

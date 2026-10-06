@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 8,
+    "file": "matrix_mult.cpp",
+    "fileloc": 3,
+    "instructions": 396,
+    "loads": {
+      "T": 10
+    },
+    "memory_accesses": 35,
+    "name": "matrix_mult",
+    "stores": {
+      "T": 25
+    },
+    "total_instructions": 396
+  }
+}

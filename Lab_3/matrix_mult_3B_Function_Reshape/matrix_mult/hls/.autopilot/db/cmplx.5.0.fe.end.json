@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "matrix_mult",
+        "file": "..\/source\/tut3B_Function_Reshape\/matrix_mult.cpp",
+        "fileloc": "6",
+        "instructions": "404",
+        "total_instructions": "404",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "35",
+        "control_depth": "0",
+        "def_use_depth": "7",
+        "loads": {
+            "T": "10"
+        },
+        "stores": {
+            "T": "25"
+        }
+    }
+}
