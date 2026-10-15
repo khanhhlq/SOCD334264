@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 15 10:17:57 2026
+# Process ID: 24308
+# Current directory: D:/Zynq_Book/led_controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25036 D:\Zynq_Book\led_controller\led_controller.xpr
+# Log file: D:/Zynq_Book/led_controller/vivado.log
+# Journal file: D:/Zynq_Book/led_controller\vivado.jou
+# Running On: AnKyhcmute, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 8279 MB
+#-----------------------------------------------------------
+start_guioopen_project D:/Zynq_Book/led_controller/led_controller.xprupdate_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+archive_project D:/Zynq_Book/led_controller.xpr.zip -temp_dir D:/Zynq_Book/led_controller/.Xil/Vivado-28532-AnKyhcmute -force -include_local_ip_cache

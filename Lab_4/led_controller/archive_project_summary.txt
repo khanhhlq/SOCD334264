@@ -1,0 +1,414 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = led_controller
+Directory = D:/Zynq_Book/led_controller
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = 
+
+Section (2) - INCLUDED RUNS
+---------------------------
+The run results were included for the following runs in the archived project:-
+
+<synth_1>
+<led_test_system_processing_system7_0_0_synth_1>
+<led_test_system_auto_pc_0_synth_1>
+<led_test_system_led_controller_0_0_synth_1>
+<led_test_system_rst_ps7_0_100M_0_synth_1>
+<impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<led_test_system_auto_pc_0>
+d:/Zynq_Book/led_test_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/83df/simulation/fifo_generator_vlog_beh.v
+d:/Zynq_Book/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/25a8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v
+
+<led_test_system_led_controller_0_0>
+d:/Zynq_Book/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0_S00_AXI.v
+d:/Zynq_Book/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0.v
+
+<led_test_system_processing_system7_0_0>
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/ffc2/hdl/axi_vip_v1_1_vl_rfs.sv
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_local_params.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_vl_rfs.sv
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_params.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_init.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_apis.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_unused_ports.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_gp.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_acp.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_hp.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_aw_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_b_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_w_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_trace_buffer.v
+
+<led_test_system_rst_ps7_0_100M_0>
+d:/Zynq_Book/led_test_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd
+
+<constrs_1>
+D:/Zynq_Book/led_test_system/led_constraints.xdc
+
+<sim_1>
+None
+
+<sources_1>
+D:/Zynq_Book/led_test_system/led_test_system.bd
+d:/Zynq_Book/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0_S00_AXI.v
+d:/Zynq_Book/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0.v
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/ffc2/hdl/axi_vip_v1_1_vl_rfs.sv
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_local_params.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_vl_rfs.sv
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_params.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_init.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_apis.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_unused_ports.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_gp.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_acp.v
+d:/Zynq_Book/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_hp.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_aw_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_b_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_w_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_atc.v
+d:/Zynq_Book/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_trace_buffer.v
+d:/Zynq_Book/led_test_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/83df/simulation/fifo_generator_vlog_beh.v
+d:/Zynq_Book/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/25a8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+d:/Zynq_Book/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v
+d:/Zynq_Book/led_test_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd
+d:/Zynq_Book/led_test_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd
+D:/Zynq_Book/led_test_system/hdl/led_test_system_wrapper.v
+
+<utils_1>
+None
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./led_controller.srcs/sources_1/bd/led_test_system/led_test_system.bd
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0_S00_AXI.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/sim/led_test_system_led_controller_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/data/led_controller.mdd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/data/led_controller.tcl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/Makefile
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/led_controller.h
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/led_controller.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/led_controller_selftest.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/synth/led_test_system_led_controller_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0.xml
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ffc2/hdl/axi_vip_v1_1_vl_rfs.sv
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_local_params.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_vl_rfs.sv
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_params.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_init.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_apis.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_unused_ports.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_gp.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_acp.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_hp.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/sim/led_test_system_processing_system7_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/hdl/verilog/led_test_system_processing_system7_0_0.hwdef
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.h
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init_gpl.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init_gpl.h
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.tcl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.html
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_aw_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_b_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_w_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_trace_buffer.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/synth/led_test_system_processing_system7_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.xml
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/simulation/fifo_generator_vlog_beh.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/25a8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/sim/led_test_system_auto_pc_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_ooc.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/synth/led_test_system_auto_pc_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0.xml
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_ps7_0_axi_periph_0/led_test_system_ps7_0_axi_periph_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_ps7_0_axi_periph_0/led_test_system_ps7_0_axi_periph_0.xml
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_board.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/sim/led_test_system_rst_ps7_0_100M_0.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/synth/led_test_system_rst_ps7_0_100M_0.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_ooc.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.xml
+./led_controller.gen/sources_1/bd/led_test_system/synth/led_test_system.v
+./led_controller.gen/sources_1/bd/led_test_system/sim/led_test_system.v
+./led_controller.gen/sources_1/bd/led_test_system/led_test_system_ooc.xdc
+./led_controller.gen/sources_1/bd/led_test_system/hw_handoff/led_test_system.hwh
+./led_controller.gen/sources_1/bd/led_test_system/led_test_system.bda
+./led_controller.gen/sources_1/bd/led_test_system/synth/led_test_system.hwdef
+./led_controller.gen/sources_1/bd/led_test_system/sim/led_test_system.protoinst
+./led_controller.srcs/sources_1/imports/hdl/led_test_system_wrapper.v
+
+<constrs_1>
+./led_controller.srcs/constrs_1/imports/led_test_system/led_constraints.xdc
+
+<sim_1>
+None
+
+<utils_1>
+./led_controller.srcs/utils_1/imports/synth_1/led_test_system_wrapper.dcp
+
+<led_test_system_processing_system7_0_0>
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ffc2/hdl/axi_vip_v1_1_vl_rfs.sv
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_local_params.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_vl_rfs.sv
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_params.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_reg_init.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_apis.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_unused_ports.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_gp.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_acp.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ee60/hdl/processing_system7_vip_v1_0_15_axi_hp.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/sim/led_test_system_processing_system7_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/hdl/verilog/led_test_system_processing_system7_0_0.hwdef
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.h
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init_gpl.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init_gpl.h
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.tcl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/ps7_init.html
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_aw_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_b_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_w_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_atc.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_trace_buffer.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/synth/led_test_system_processing_system7_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_processing_system7_0_0/led_test_system_processing_system7_0_0.xml
+
+<led_test_system_auto_pc_0>
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/simulation/fifo_generator_vlog_beh.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/25a8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/83df/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/sim/led_test_system_auto_pc_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0_ooc.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/synth/led_test_system_auto_pc_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_auto_pc_0/led_test_system_auto_pc_0.xml
+
+<led_test_system_led_controller_0_0>
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0_S00_AXI.v
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/2fc2/hdl/led_controller_v1_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/sim/led_test_system_led_controller_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/data/led_controller.mdd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/data/led_controller.tcl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/Makefile
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/led_controller.h
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/led_controller.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/drivers/led_controller_v1_0/src/led_controller_selftest.c
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/synth/led_test_system_led_controller_0_0.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_led_controller_0_0/led_test_system_led_controller_0_0.xml
+
+<led_test_system_rst_ps7_0_100M_0>
+./led_controller.srcs/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.xci
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_board.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/sim/led_test_system_rst_ps7_0_100M_0.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.dcp
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_stub.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_stub.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_sim_netlist.v
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_sim_netlist.vhdl
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/synth/led_test_system_rst_ps7_0_100M_0.vhd
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0_ooc.xdc
+./led_controller.gen/sources_1/bd/led_test_system/ip/led_test_system_rst_ps7_0_100M_0/led_test_system_rst_ps7_0_100M_0.xml
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+./led_controller.ipdefs/led_controller_1_0/
+
+<led_test_system_processing_system7_0_0>
+None
+
+<led_test_system_auto_pc_0>
+None
+
+<led_test_system_led_controller_0_0>
+None
+
+<led_test_system_rst_ps7_0_100M_0>
+None
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = D:/Zynq_Book/led_controller/vivado.jou
+Archived Location = ./led_controller/vivado.jou
+
+Source File = D:/Zynq_Book/led_controller/vivado.log
+Archived Location = ./led_controller/vivado.log
+

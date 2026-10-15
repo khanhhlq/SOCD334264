@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln813_fu_77_p2" SOURCE="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:813" VARIABLE="add_ln813" MODULE="nco" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sine_lut_V_U" SOURCE="" VARIABLE="sine_lut_V" MODULE="nco" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="4" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="slv0_s_axi_U" SOURCE="" VARIABLE="" MODULE="nco" LOOP="" BUNDLEDNAME="slv0" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

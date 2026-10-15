@@ -1,0 +1,27 @@
+04:45:57 DEBUG : Logs will be stored at 'D:/Zynq_Book/Lab4_vitis/IDE.log'.
+04:46:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Zynq_Book\Lab4_vitis\temp_xsdb_launch_script.tcl
+04:46:00 INFO  : Registering command handlers for Vitis TCF services
+04:46:00 INFO  : Platform repository initialization has completed.
+04:46:05 INFO  : XSCT server has started successfully.
+04:46:17 INFO  : plnx-install-location is set to ''
+04:46:17 INFO  : Successfully done setting XSCT server connection channel  
+04:46:17 INFO  : Successfully done query RDI_DATADIR 
+04:46:17 INFO  : Successfully done setting workspace for the tool. 
+05:00:39 INFO  : Result from executing command 'getProjects': led_test_system_wrapper
+05:00:39 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+05:00:39 WARN  : An unexpected exception occurred in the module 'platform project logging'
+05:00:40 INFO  : Platform 'led_test_system_wrapper' is added to custom repositories.
+05:00:49 INFO  : Platform 'led_test_system_wrapper' is added to custom repositories.
+05:08:58 INFO  : Saving repository preferences.
+05:08:58 INFO  : Reading in cores from local repositories: 
+		 D:\Zynq_Book\led_controller\ip_repo\led_controller_1_0
+05:08:58 INFO  : Cleaning BSP projects in the workspace.
+05:29:18 INFO  : Saving repository preferences.
+05:30:56 ERROR : (XSDB Server)rm: cannot lstat `*.o': Invalid argument
+
+05:30:56 ERROR : (XSDB Server)make: *** [Makefile:42: clean] Error 1
+
+05:46:20 INFO  : Result from executing command 'getProjects': led_test_system_wrapper
+05:46:20 INFO  : Result from executing command 'getPlatforms': led_test_system_wrapper|D:/Zynq_Book/Lab4_vitis/led_test_system_wrapper/export/led_test_system_wrapper/led_test_system_wrapper.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+05:50:53 INFO  : Checking for BSP changes to sync application flags for project 'led_test'...
+05:54:02 INFO  : Checking for BSP changes to sync application flags for project 'led_test'...
